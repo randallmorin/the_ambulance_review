@@ -1,0 +1,564 @@
+/* ----------
+   General
+---------- */
+html {
+  font-size: 16px;
+  font-family: "Oswald", serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 99%);
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .about {
+  padding-top: 48px;
+}
+
+
+/* ----------
+    Header
+---------- */
+.landing {
+  height: 25rem;
+  background-image: url("../images/band.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* ----------
+ Navigation
+---------- */
+
+#nav {
+  background-color: hsl(0, 0%, 15%);
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+  transition: box-shadow 100ms linear;
+}
+
+#nav a {
+  padding: 1rem 0;
+}
+
+#nav a:hover {
+  color: hsl(0, 100%, 35%);
+}
+
+/* ----------
+    About
+---------- */
+.about {
+  margin-top: 2.5rem;
+}
+
+.logo-container {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+}
+
+.about-us {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem 1rem;
+  font-family: "Oswald", serif;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.names {
+  line-height: 1.5;
+}
+
+.genre {
+  margin: 2rem 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+/* ----------
+    Music
+---------- */
+.eps, .lps {
+  margin-bottom: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  padding: 0 2%;
+}
+
+.album-container {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.album-container:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+.album {
+  border: 1px solid hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 15%);
+  z-index: 500;
+}
+
+.artwork-container {
+  width: 100%;
+  height: auto;
+}
+
+.artwork {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 10%);
+  font-family: "Oswald", serif;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.buttons i {
+  padding-left: 0.2rem;
+}
+
+.button {
+  width: 40%;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: hsl(0, 100%, 35%);
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid hsl(0, 100%, 20%);
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2));
+}
+
+.listening {
+  background-color: white;
+  color: hsl(0, 100%, 35%);
+  border-bottom: 2px solid hsl(0, 0%, 50%);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.track-button:hover {
+  cursor: pointer;
+}
+
+.tracks {
+  background-color: hsl(0, 0%, 13%);
+  color: white;
+  width: 98%;
+  margin: 0 auto;
+  border-left: 1px solid hsl(0, 0%, 10%);
+  border-right: 1px solid hsl(0, 0%, 10%);
+  border-bottom: 1px solid hsl(0, 0%, 10%);
+  z-index: 300;
+  overflow: hidden;
+  position: relative;
+  height: 0.5rem;
+}
+
+/* player */
+.buttons-container {
+  display: flex;
+}
+
+.play-button-container, .stop-button-container {
+  background-color: hsl(0, 100%, 35%);
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  border-radius: 100%;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3));
+}
+
+.stop-button-container {
+  opacity: 0.5;
+  transition: opacity 100ms linear;
+  margin-left: 0.5rem;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-57%, -50%);
+}
+
+.stop-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pause-button /* to be added when playing a song */{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-button-container:hover, .stop-button-container:hover {
+  cursor: pointer;
+}
+
+.close-container {
+  text-align: center;
+}
+
+.close-button {
+  font-size: 2rem;
+  color: hsl(0, 100%, 35%);
+  margin: 0.75rem;
+  border-radius: 100%;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.track-container {
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom right, hsl(0, 0%, 11%), hsl(0, 0%, 17%));
+}
+
+.track {
+  display: flex;
+  padding: 0.75rem 0rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.media {
+  width: 50%;
+  overflow: scroll;
+}
+
+.media p {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.progress-container {
+  height: 0.25rem;
+  width: 100%;
+  background-color: hsl(0, 0%, 75%);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: hsl(0, 100%, 35%);
+}
+
+.song-time {
+  font-size: 0.85rem;
+  padding-right: 0.25rem;
+}
+
+
+/* ----------
+    Videos
+---------- */
+
+.video {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 15%);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  height: auto;
+  width: 100%;
+}
+
+.video-info {
+  background-color: hsl(0, 0%, 15%);
+  padding: 0.55rem 0.5rem 1rem 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Oswald", serif;
+  color: white;
+}
+
+/* video controls */
+
+.video-controls {
+  display: flex;
+  position: absolute;
+  bottom: -2.5rem;
+  width: 100%;
+  height: 2.5rem;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .7));
+  /* background-color: hsla(0, 100%, 35%, 1); */
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.video-play-container {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 100%, 35%);
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3));
+}
+
+.video-play-container i {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-56%, -50%);
+}
+
+.video-progress-container {
+  width: 50%;
+  height: 0.25rem;
+  background-color: hsl(0, 0%, 75%);
+}
+
+.video-progress {
+  height: 100%;
+  width: 0%;
+  background-color: white;
+}
+
+.video-time {
+  display: flex;
+  align-items: center;
+}
+
+
+/* buttons */
+.video-pause {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.fullscreen {
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+
+/* ----------
+    Shows
+---------- */
+.show-container {
+  background-color: hsl(0, 0%, 15%);
+  width: 92%;
+  margin: 1rem auto;
+  padding: 1rem;
+
+}
+
+.show-text {
+  color: white;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+/* ----------
+   Footer
+---------- */
+
+footer {
+  background-color: hsl(0, 0%, 15%);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.social {
+  margin-bottom: 1rem;
+}
+
+.social i {
+  font-size: 1.25rem;
+  padding: 0rem 1rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 500px) {
+  .section-title {
+    font-size: 4.5rem;
+  }
+
+  .names {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .genre {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .landing {
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .logo-container {
+    width: 50%;
+    margin: 0;
+  }
+
+  .about-us {
+    text-align: left;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .genre {
+    margin: 2rem 0;
+  }
+
+  .eps, .lps {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .album-container {
+    width: 45%;
+  }
+
+  .music-videos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .video {
+    width: 45%;
+  }
+
+  #videos {
+    margin-bottom: 2rem;
+  }
+
+  .social i {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #nav {
+    justify-content: center;
+  }
+
+  #nav a {
+    margin: 0rem 5rem;
+  }
+
+  .about {
+    width: 80%;
+    margin: 2.5rem auto 1.5rem auto;
+  }
+
+  #music, #videos, #shows {
+    width: 80%;
+    margin: 0 auto 2.5rem auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    width: 70%;
+  }
+
+  #music, #videos, #shows {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */

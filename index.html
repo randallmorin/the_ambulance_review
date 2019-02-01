@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ambulance Review</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Oswald:300,400,500"
+    rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  </head>
+  <body id="top">
+    <!-- Header -->
+    <header class="landing" id="landing">
+    </header>
+
+    <!-- Navigation -->
+    <div id="nav">
+      <a href="#music" class="nav-link">MUSIC</a>
+      <a href="#videos" class="nav-link">VIDEO</a>
+      <a href="#shows" class="nav-link">SHOWS</a>
+    </div>
+
+    <!-- About -->
+    <section class="about">
+      <div class="logo-container">
+        <img class="logo" src="./images/logo-light.svg" alt="The Ambulance Review logo">
+      </div>
+      <div class="about-us">
+        <p class="names">Tom MacGregor<br>Sam MacGregor<br>Randy Morin</p>
+        <p class="genre">Pop punk from Fredericksburg, Virginia.</p>
+        <p class="tagline">Play as fast as you can.</p>
+      </div>
+    </section>
+
+    <!-- Music -->
+    <section id="music">
+
+      <!-- EPs -->
+      <h1 class="section-title">EPs</h1>
+      <div class="eps" id="eps">
+
+        <!-- Now... where were we? -->
+        <div class="album-container">
+          <div class="album">
+            <div class="artwork-container">
+              <img class="artwork" src="./images/album_artwork/now_where_were_we.jpg"
+              alt="now where were we cover art">
+            </div>
+            <div class="info">
+              <p class="title">Now... Where Were We? <br>(2015)</p>
+              <div class="buttons">
+                <a href="music/EPs/TheAmbulanceReview-Now...WhereWereWe-2015.zip" download class="button">Download <i class="fas fas fa-download"></i></a>
+                <a class="button track-button" onclick="expandTracks(0)">Listen <i class="fas fa-list show-tracklist"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tracks">
+            <ol class="track-list">
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(0)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(0)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>You're Goddamn Right</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/1 - You're Goddamn Right.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(1)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(1)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>WTF</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/2 - WTF.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(2)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(2)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Suit Up!</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/3 - Suit Up!.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(3)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick ="stopButtonBehavior(3)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Stranger Danger</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/4 - Stranger Danger.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(4)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(4)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Dr. Shane</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/5 - Dr Shane.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(5)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(5)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Danielle</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/6 - Danielle.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(6)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(6)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Twenty Ten</p>
+                    <audio controls>
+                      <source src="music/EPs/Now... Where Were We/7 - Twenty Ten.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+            </ol>
+            <div class="close-container">
+              <i class="far fa-times-circle close-button" onclick="closeTracks(0)"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beatles are fucking lame -->
+        <div class="album-container">
+          <div class="album">
+            <div class="artwork-container">
+              <img class="artwork" src="./images/album_artwork/beatles_are_lame.jpg"
+              alt="beatles are fucking lame cover art">
+            </div>
+            <div class="info">
+              <p class="title">The Beatles Are Fucking Lame <br>(2013)</p>
+              <div class="buttons">
+                <a href="music/EPs/TheAmbulanceReview-TheBeatlesAreFuckingLame-2013.zip" download class="button">Download <i class="fas fas fa-download"></i></a>
+                <a class="button track-button" onclick="expandTracks(1)">Listen <i class="fas fa-list show-tracklist"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tracks">
+            <ol class="track-list">
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(7)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(7)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Mr. Lennon!</p>
+                    <audio controls>
+                      <source src="music/EPs/The Ambulance Review - The Beatles Are Fucking Lame!/01 Mr. Lennon!.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(8)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(8)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Come On</p>
+                    <audio controls>
+                      <source src="music/EPs/The Ambulance Review - The Beatles Are Fucking Lame!/02 Come On.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(9)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(9)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>We're Not Savages, Kate. Not Yet.</p>
+                    <audio controls>
+                      <source src="music/EPs/The Ambulance Review - The Beatles Are Fucking Lame!/03 We're Not Savages, Kate. Not Yet..mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+            </ol>
+            <div class="close-container">
+              <i class="far fa-times-circle close-button" onclick="closeTracks(1)"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LPs -->
+      <h1 class="section-title">LPs</h1>
+      <div class="lps" id="lps">
+        <!-- this isn't permanent -->
+        <div class="album-container">
+          <div class="album">
+            <div class="artwork-container">
+              <img class="artwork" src="./images/album_artwork/this_isnt_permanent.jpg"
+              alt="This isn't permanent cover art">
+            </div>
+            <div class="info">
+              <p class="title">This Isn't Permanent <br>(2011)</p>
+              <div class="buttons">
+                <a href="music/EPs/TheAmbulanceReview-TheBeatlesAreFuckingLame-2013.zip" download class="button">Download <i class="fas fas fa-download"></i></a>
+                <a class="button track-button" onclick="expandTracks(2)">Listen <i class="fas fa-list show-tracklist"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tracks">
+            <ol class="track-list">
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(10)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(10)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>The Ultimate Alliance</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/01 - The Ultimate Alliance.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(11)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(11)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Too Good To Be True</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/02 - Too Good To Be True.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(12)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(12)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>The Apocalypse</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/03 - The Apocalypse.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(13)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(13)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Ride Or Die</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/04 - Ride Or Die.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(14)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(14)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Jesus Doesn't Mosh</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/05 - Jesus Doesn't Mosh.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(15)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(15)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Fine Without You</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/06 - Fine Without You.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(16)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(16)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>CCC</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/07 - CCC.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(17)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(17)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Believe</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/08 - Believe.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(18)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(18)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Head On Straight</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/09 - Head On Straight.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(19)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(19)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Dirty Steps and Cigarettes</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/10 - Dirty Steps and Cigarettes.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(20)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(20)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>130B</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/11 - 130B.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(21)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(21)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>The Operator</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent!/12 - The Operator.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+            </ol>
+            <div class="close-container">
+              <i class="far fa-times-circle close-button" onclick="closeTracks(2)"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- b-sides -->
+        <div class="album-container">
+          <div class="album">
+            <div class="artwork-container">
+              <img class="artwork" src="./images/album_artwork/tip_b_sides.jpg"
+              alt="B Sides cover art">
+            </div>
+            <div class="info">
+              <p class="title">This Isn't Permanent B-Sides <br>(2011)</p>
+              <div class="buttons">
+                <a href="music/LPs/TheAmbulanceReview-ThisIsntPermanentBSides-2011.zip" download class="button">Download <i class="fas fas fa-download"></i></a>
+                <a class="button track-button" onclick="expandTracks(3)">Listen <i class="fas fa-list show-tracklist"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tracks">
+            <ol class="track-list">
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(22)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(22)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Live Fast, Die Young, and Leave a Good Looking Corpse</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent B-Sides/01 Live Fast, Die Young, and Leave a Good Looking Corpse.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(23)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(23)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>No Friends? No Problem!</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent B-Sides/02 No Friends_ No Problem!.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+              <li class="track-container">
+                <div class="track">
+                  <div class="buttons-container">
+                    <div class="play-button-container" onclick="playSong(24)">
+                      <i class="fas fa-play play-button"></i>
+                    </div>
+                    <div class="stop-button-container" onclick="stopButtonBehavior(24)">
+                      <i class="fas fa-stop stop-button"></i>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <p>Queen</p>
+                    <audio controls>
+                      <source src="music/LPs/This Isn't Permanent B-Sides/03 Queen.mp3"
+                      type="audio/mpeg">
+                    </audio>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="song-time"></p>
+                </div>
+              </li>
+            <ol>
+            <div class="close-container">
+              <i class="far fa-times-circle close-button" onclick="closeTracks(3)"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="videos">
+      <h1 class="section-title">Video</h1>
+      <div class="music-videos">
+        <!-- Suit Up! -->
+        <div class="video">
+          <div class="video-container">
+            <video src="./video/suitup.mp4" controls poster="./video/suitupposter.png" playsinline>Not Supported</video>
+            <div class="video-play-container" onclick="playVideo(0)">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="video-controls">
+              <i class="fas fa-pause video-pause" onclick="pauseVideo(0)"></i>
+              <div class="video-progress-container">
+                <div class="video-progress">
+                </div>
+              </div>
+              <div class="video-time">
+                <p class="elapsed-time">0:00</p>
+                <span>/</span>
+                <p class="total-time"></p>
+              </div>
+              <i class="fas fa-expand fullscreen" onclick="fullscreenVideo(0)"></i>
+            </div>
+          </div>
+          <div class="video-info-container">
+            <p class="video-info">Suit Up!</p>
+          </div>
+        </div>
+
+        <!-- Stranger Danger -->
+        <div class="video">
+          <div class="video-container">
+            <video src="./video/strangerdanger.mp4" controls poster="./video/strangerdangerposter.png" playsinline>Not Supported</video>
+            <div class="video-play-container" onclick="playVideo(1)">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="video-controls">
+              <i class="fas fa-pause video-pause" onclick="pauseVideo(1)"></i>
+              <div class="video-progress-container">
+                <div class="video-progress">
+                </div>
+              </div>
+              <div class="video-time">
+                <p class="elapsed-time">0:00</p>
+                <span>/</span>
+                <p class="total-time"></p>
+              </div>
+              <i class="fas fa-expand fullscreen" onclick="fullscreenVideo(1)"></i>
+            </div>
+          </div>
+          <div class="video-info-container">
+            <p class="video-info">Stranger Danger</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shows -->
+    <section id="shows">
+      <h1 class="section-title">Shows</h1>
+      <div class="show-container">
+        <p class="show-text">Check back later!</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/TheAmbulanceReview/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/ambulancereview/?hl=en" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/ambulancereview?lang=en" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC86Lw8Xk_-ntJnI5u29GHtw" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <span class="copyright">&copy; The Ambulance Review 2018</span>
+    </footer>
+
+    <script src="./js/jQuery3.1.1"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
